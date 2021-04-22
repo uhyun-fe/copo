@@ -1,13 +1,13 @@
 import React from "react";
 import styled from "styled-components";
 
-const SignupInput = ({ labelText, onChange }) => {
+const SignupInput = ({ labelText, inputRef, onChange }) => {
    return (
       <View>
          <label htmlFor={labelText + "_input"}>
             <span>{labelText}</span>
             <div className="input_area">
-               <input type="text" id={labelText + "_input"} onChange={onChange} />
+               <input type="text" id={labelText + "_input"} ref={inputRef} onChange={onChange} />
             </div>
          </label>
       </View>

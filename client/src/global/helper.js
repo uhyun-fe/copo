@@ -12,3 +12,9 @@ export const koreanEulReulReturner = (str) => {
 
    return prop ? "을" : "를";
 };
+
+// 이메일 형식 확인 (올바른 형식일 경우 return true)
+export const isRightEmail = (str) => {
+   var regExp = /^[0-9a-zA-Z]([-_\.]?[0-9a-zA-Z])*@[0-9a-zA-Z]([-_\.]?[0-9a-zA-Z])*\.[a-zA-Z]{2,3}$/i;
+   return regExp.test(str); // is_right_email ? true : false
+};

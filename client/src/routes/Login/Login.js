@@ -4,16 +4,33 @@ import styled from "styled-components";
 import { SignupInput, SignupItemText, SignupTopBanner } from "../../components";
 import { FindInfoArea, GoSignupArea, SignupButton } from "../../components/SignupComponents/SignupStyles";
 import logo from "../../assets/images/copo.png";
+import LoginLogic from "./LoginLogic";
+import { isRightEmail } from "../../global/helper";
+import { Link } from "react-router-dom";
 
-const Login = () => {
+const Login = ({ history }) => {
+   const { userInfo, setUserInfo, isPossibleLogin, inputRef, login } = LoginLogic({ history });
    return (
       <>
          <SignupTopBanner />
          <View>
-            <SignupItemText text={"이메일"} />
-            <SignupInput labelText={"이메일"} onChange={() => console.log("쓰는중...")} />
-            <SignupInput labelText={"비밀번호"} onChange={() => console.log("쓰는중...")} />
-            <SignupButton>로그인</SignupButton>
+            <SignupItemText
+               text={!isRightEmail(userInfo.email) ? "이메일" : !isPossibleLogin ? "비밀번호" : "로그인버튼"}
+               is_done={isPossibleLogin}
+            />
+            <SignupInput
+               labelText={"이메일"}
+               inputRef={inputRef.email}
+               onChange={({ target: { value: email } }) => setUserInfo({ ...userInfo, email })}
+            />
+            <SignupInput
+               labelText={"비밀번호"}
+               inputRef={inputRef.password}
+               onChange={({ target: { value: password } }) => setUserInfo({ ...userInfo, password })}
+            />
+            <SignupButton className={isPossibleLogin ? "possible" : "impossible"} onClick={login} disabled={isPossibleLogin ? false : true}>
+               로그인
+            </SignupButton>
             <FindInfoArea>
                <button>아이디 찾기</button>|<button>비밀번호 찾기</button>
             </FindInfoArea>
@@ -21,7 +38,9 @@ const Login = () => {
                <p>
                   <img src={logo} alt="copo_logo" />가 처음이신가요?
                </p>
-               <button>회원가입하러가기</button>
+               <Link to="/signup">
+                  <button>회원가입하러가기</button>
+               </Link>
             </GoSignupArea>
          </View>
       </>

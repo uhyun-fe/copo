@@ -12,6 +12,15 @@ export const SignupButton = styled.button`
    background: #8e95be;
    box-shadow: 4px 2px 5px 0 rgba(0, 0, 0, 0.25);
    transition: 0.2s ease-in-out;
+   &.impossible {
+      color: #b1b8b6;
+      background: #e9eaf0;
+      cursor: default;
+      &:hover,
+      &:active {
+         background: #e9eaf0;
+      }
+   }
    &:hover {
       background: #7c83ac;
    }
