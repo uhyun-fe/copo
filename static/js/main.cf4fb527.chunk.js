@@ -1,2 +1,0 @@
-(this.webpackJsonpclient=this.webpackJsonpclient||[]).push([[0],{9:function(e,t,n){"use strict";n.r(t);var c=n(0),i=n.n(c),r=n(3),o=n.n(r),s=n(1),d=function(){return Object(s.jsx)("div",{children:"copo web"})};o.a.render(Object(s.jsx)(i.a.StrictMode,{children:Object(s.jsx)(d,{})}),document.getElementById("root"))}},[[9,1,2]]]);
-//# sourceMappingURL=main.cf4fb527.chunk.js.map
