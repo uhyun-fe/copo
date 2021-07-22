@@ -1,18 +1,21 @@
 {
   "files": {
-    "main.js": "/copo/static/js/main.463fa7f6.chunk.js",
-    "main.js.map": "/copo/static/js/main.463fa7f6.chunk.js.map",
+    "main.js": "/copo/static/js/main.071066c4.chunk.js",
+    "main.js.map": "/copo/static/js/main.071066c4.chunk.js.map",
     "runtime-main.js": "/copo/static/js/runtime-main.05510396.js",
     "runtime-main.js.map": "/copo/static/js/runtime-main.05510396.js.map",
-    "static/js/2.d2ca67db.chunk.js": "/copo/static/js/2.d2ca67db.chunk.js",
-    "static/js/2.d2ca67db.chunk.js.map": "/copo/static/js/2.d2ca67db.chunk.js.map",
+    "static/js/2.77e2a4c6.chunk.js": "/copo/static/js/2.77e2a4c6.chunk.js",
+    "static/js/2.77e2a4c6.chunk.js.map": "/copo/static/js/2.77e2a4c6.chunk.js.map",
     "index.html": "/copo/index.html",
-    "static/js/2.d2ca67db.chunk.js.LICENSE.txt": "/copo/static/js/2.d2ca67db.chunk.js.LICENSE.txt",
-    "static/media/copo.d3e41286.png": "/copo/static/media/copo.d3e41286.png"
+    "static/js/2.77e2a4c6.chunk.js.LICENSE.txt": "/copo/static/js/2.77e2a4c6.chunk.js.LICENSE.txt",
+    "static/media/copo.d3e41286.png": "/copo/static/media/copo.d3e41286.png",
+    "static/media/email.a2f2146f.png": "/copo/static/media/email.a2f2146f.png",
+    "static/media/kakao.128af687.png": "/copo/static/media/kakao.128af687.png",
+    "static/media/user.ae3a914b.png": "/copo/static/media/user.ae3a914b.png"
   },
   "entrypoints": [
     "static/js/runtime-main.05510396.js",
-    "static/js/2.d2ca67db.chunk.js",
-    "static/js/main.463fa7f6.chunk.js"
+    "static/js/2.77e2a4c6.chunk.js",
+    "static/js/main.071066c4.chunk.js"
   ]
 }
