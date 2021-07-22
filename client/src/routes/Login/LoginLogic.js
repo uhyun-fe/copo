@@ -14,6 +14,7 @@ const LoginLogic = ({ history }) => {
    useEffect(() => {
       // 화면 렌더링 후 이메일 input 포커싱
       inputRef.email.current.focus();
+      window.scrollTo(0, 0);
    }, []);
 
    useEffect(() => {

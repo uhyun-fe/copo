@@ -1,15 +1,24 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import styled from "styled-components";
+
+import MainNav from "../../components/MainNav/MainNav";
+import HomeLogic from "./HomeLogic";
 
 const Home = () => {
+   const {} = HomeLogic();
    return (
-      <div>
-         메인 페이지
-         <br />
-         <br />
-         <Link to="/login">로그인</Link>
-      </div>
+      <View>
+         <MainNav />
+         <main></main>
+      </View>
    );
 };
+
+const View = styled.div`
+   main {
+      padding-top: 60px;
+      height: 1000px;
+   }
+`;
 
 export default Home;

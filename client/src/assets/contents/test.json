@@ -1,0 +1,23 @@
+{
+   "nav": {
+      "login_guide": "로그인 후, 나만의 copo를 만들어보세요!",
+      "login_nav": [
+         { "title": "홈", "code": "/" },
+         { "title": "My copo", "code": "/" },
+         { "title": "Add copo", "code": "/" },
+         { "title": "회원정보수정", "code": "/" },
+         { "title": "로그아웃", "code": "/" }
+      ],
+      "not_login_nav": [
+         { "title": "홈", "code": "/" },
+         { "title": "로그인", "code": "/login" },
+         { "title": "회원가입", "code": "/signup" }
+      ]
+   },
+   "footer": {
+      "title": "나만의 코인 포트폴리오",
+      "name": "최유현 Choi Youhyun",
+      "email": "feyouhyun0957@gmail.com",
+      "kakao": "https://open.kakao.com/o/sUA4Txad"
+   }
+}
